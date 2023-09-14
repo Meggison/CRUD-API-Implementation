@@ -31,11 +31,11 @@ Endpoint: /api/person/{id} (HTTP DELETE)
 }
 
 
-Limitations and Assumptions
+Limitations and Assumptions:
 The API assumes that the "name" field is mandatory for creating and updating a person. Missing or empty "name" values will result in errors.
 It is assumed that the API is running locally at http://localhost:5000. Adjust the base URL for your specific deployment.
 
-Setting Up and Deploying the API
+Setting Up and Deploying the API:
 Follow these steps to set up and deploy the API:
 Clone the repository from GitHub.
 Create a virtual environment and activate it (recommended).
