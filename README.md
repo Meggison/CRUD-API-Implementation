@@ -15,17 +15,23 @@ json
 }
 ### Get a Person
 Endpoint: /api/person/{id} (HTTP GET)
+**Request Format:**
+json
 {
   "name": "John Doe"
 }
 ### Update a Person
 Endpoint: /api/person/{id} (HTTP PUT)
+**Request Format:**
+json
 {
   "name": "Updated Name"
 }
 
 ### Delete a Person
 Endpoint: /api/person/{id} (HTTP DELETE)
+**Request Success:**
+json
 {
   "message": "Person deleted successfully"
 }
