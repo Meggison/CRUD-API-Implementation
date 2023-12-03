@@ -1,51 +1,45 @@
-# API Documentation
+# Simple CRUD API Documentation
 
-This documentation provides information on how to use the Simple CRUD API for managing persons. The API allows you to perform basic CRUD operations on person resources.
+## Overview
+
+This documentation details the usage of the Simple CRUD API for managing person entities. The API facilitates basic CRUD (Create, Read, Update, Delete) operations on person resources.
 
 ## API Endpoints
 
 ### Create a Person
+- **Endpoint:** `/api/person` (HTTP POST)
+- **Request Format:** JSON
 
-**Endpoint:** `/api/person` (HTTP POST)
-
-**Request Format:**
-json
-{
-  "name": "John Doe"
-}
 ### Get a Person
-Endpoint: /api/person/{id} (HTTP GET)
-**Request Format:**
-json
-{
-  "name": "John Doe"
-}
+- **Endpoint:** `/api/person/{id}` (HTTP GET)
+- **Request Format:** JSON
+
 ### Update a Person
-Endpoint: /api/person/{id} (HTTP PUT)
-**Request Format:**
-json
-{
-  "name": "Updated Name"
-}
+- **Endpoint:** `/api/person/{id}` (HTTP PUT)
+- **Request Format:** JSON
 
 ### Delete a Person
-Endpoint: /api/person/{id} (HTTP DELETE)
-**Request Success:**
-json
-{
-  "message": "Person deleted successfully"
-}
+- **Endpoint:** `/api/person/{id}` (HTTP DELETE)
+- **Request Success:** JSON
+{ "message": "Person deleted successfully" }
 
+## Limitations and Assumptions
 
-### Limitations and Assumptions:
-The API assumes that the "name" field is mandatory for creating and updating a person. Missing or empty "name" values will result in errors.
-It is assumed that the API is running locally at http://localhost:5000. Adjust the base URL for your specific deployment.
+- The "name" field is mandatory for creating and updating a person.
+- Missing or empty "name" values will lead to errors.
+- The API is assumed to be running locally at `http://localhost:5000`. Adjust the base URL as per your deployment.
 
-### Setting Up and Deploying the API:
+## Setting Up and Deploying the API
+
 Follow these steps to set up and deploy the API:
-Clone the repository from GitHub.
-Create a virtual environment and activate it (recommended).
-Install the required dependencies from the requirements.txt file using pip install -r requirements.txt.
-Run the Flask application using python app.py. The API will be accessible at http://localhost:5000.
-Use tools like Postman or scripts to interact with the API as shown in the "Sample Usage" section.
+
+1. Clone the repository from GitHub.
+2. Create a virtual environment and activate it (recommended).
+3. Install required dependencies: pip install -r requirements.txt
+4. Run the Flask application: python app.py
+5. 5. The API will be accessible at `http://localhost:5000`.
+
+## Sample Usage
+
+Utilize tools like Postman or custom scripts to interact with the API endpoints as demonstrated above.
 
